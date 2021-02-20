@@ -1,0 +1,4 @@
+when pushing a new buld:
+- search 'earthFromSpace' and change path:
+  - from './assets/earthFromSpace'
+  - to '../dist/assets/earthFromSpace'
