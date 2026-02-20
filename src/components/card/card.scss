@@ -7,6 +7,8 @@
   border: 1px solid;
   border-radius: $radius-l;
   border-color: $card-border;
+  box-shadow: $card-shadow;
+  transition: $card-transition;
 
   display: flex;
   flex-direction: column;
@@ -14,6 +16,8 @@
   &:hover {
     background-color: $card-background-hover;
     border-color: $card-border-hover;
+    box-shadow: $card-shadow-hover;
+    transform: translateY($card-lift);
   }
 
   .image-preview {
