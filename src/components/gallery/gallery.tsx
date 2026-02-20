@@ -32,6 +32,55 @@ export function Gallery() {
           description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
           ctaButtonType="Play"
         />
+
+        <Card
+          imageSrc="/boxCross.JPG"
+          title="Box Cross"
+          description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
+          ctaButtonType="Play"
+        />
+
+        <Card
+          imageSrc="/boxCross.JPG"
+          title="Box Cross"
+          description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
+          ctaButtonType="Play"
+        />
+
+        <Card
+          imageSrc="/boxCross.JPG"
+          title="Box Cross"
+          description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
+          ctaButtonType="Play"
+        />
+
+        <Card
+          imageSrc="/boxCross.JPG"
+          title="Box Cross"
+          description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
+          ctaButtonType="Play"
+        />
+
+        <Card
+          imageSrc="/boxCross.JPG"
+          title="Box Cross"
+          description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
+          ctaButtonType="Play"
+        />
+
+        <Card
+          imageSrc="/boxCross.JPG"
+          title="Box Cross"
+          description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
+          ctaButtonType="Play"
+        />
+
+        <Card
+          imageSrc="/boxCross.JPG"
+          title="Box Cross"
+          description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
+          ctaButtonType="Play"
+        />
       </div>
     </div>
   );
