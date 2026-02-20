@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 // General
 $color-bg-primary: #0e1424;
 
@@ -8,6 +10,22 @@ $card-border: #222c47;
 $card-border-hover: #2b375a;
 
 // Typography
+$font-primary: "Inter", system-ui, "Segoe UI", sans-serif;
+$font-size-page-header: 40px;
+$line-height-page-header: 1.2;
+$font-weight-page-header: 700;
+$font-size-card-title: 20px;
+$line-height-card-title: 1.3;
+$font-weight-card-title: 600;
+$font-size-card-body: 15px;
+$line-height-card-body: 1.6;
+$font-weight-card-body: 400;
+$font-size-tags: 13px;
+$line-height-tags: 1.4;
+$font-weight-tags: 500;
+$font-size-button: 14px;
+$line-height-button: 1.2;
+$font-weight-button: 500;
 $text-primary: #f1f5ff;
 $text-secondary: #aab4d6;
 $text-muted: #7e8bb3;
@@ -21,3 +39,20 @@ $button-secondary-hover: #202c49;
 
 // Images
 $image-overlay: rgba(0, 0, 0, 0.35);
+
+// Spacings
+$space-0: 0px;
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-7: 32px;
+$space-8: 40px;
+$space-9: 48px;
+$space-10: 64px;
+
+$radius-s: 10px; // tags, small pills
+$radius-m: 12px; // buttons, images
+$radius-l: 16px; // cards

@@ -1,0 +1,27 @@
+@import "../../palette.scss";
+
+.card {
+  padding: $space-6;
+  background-color: $card-background;
+  color: $text-primary;
+  border: 1px solid;
+  border-radius: $radius-l;
+  border-color: $card-border;
+
+  &:hover {
+    background-color: $card-background-hover;
+    border-color: $card-border-hover;
+  }
+
+  .title {
+    font-size: $font-size-card-title;
+    line-height: $line-height-card-title;
+    font-weight: $font-weight-card-title;
+  }
+
+  .description {
+    font-size: $font-size-card-body;
+    line-height: $line-height-card-body;
+    font-weight: $font-weight-card-body;
+  }
+}
