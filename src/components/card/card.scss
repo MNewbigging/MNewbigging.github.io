@@ -43,6 +43,13 @@
     font-weight: $font-weight-card-body;
   }
 
+  .tags {
+    margin-top: $space-1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-1;
+  }
+
   .buttons {
     margin-top: $space-3;
     margin-bottom: $space-0;

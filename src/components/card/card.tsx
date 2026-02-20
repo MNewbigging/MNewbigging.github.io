@@ -1,9 +1,11 @@
+import { Tag } from "../tag/tag";
 import "./card.scss";
 
 export interface CardProps {
   imageSrc: string;
   title: string;
   description: string;
+  tags: string[];
   ctaButtonType: "Play" | "Open";
   linkPath: string;
 }
@@ -12,6 +14,7 @@ export function Card({
   imageSrc,
   title,
   description,
+  tags,
   ctaButtonType,
   linkPath,
 }: CardProps) {
@@ -21,6 +24,10 @@ export function Card({
   const githubLinkBase = "https://github.com/MNewbigging/";
   const githubLink = githubLinkBase + linkPath;
 
+  const tagElements = tags.map((tagText, index) => (
+    <Tag key={`${title}-${tagText}-index`} text={tagText} />
+  ));
+
   return (
     <div className="card">
       <div className="image-preview">
@@ -28,7 +35,7 @@ export function Card({
       </div>
       <div className="title">{title}</div>
       <div className="description">{description}</div>
-      <div className="tags"></div>
+      <div className="tags">{tagElements}</div>
       <div className="buttons">
         <a className="cta-button" href={appLink} target={"_blank"}>
           {ctaButtonType}

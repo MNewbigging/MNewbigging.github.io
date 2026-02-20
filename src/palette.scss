@@ -24,6 +24,7 @@ $font-weight-card-body: 400;
 $font-size-tags: 13px;
 $line-height-tags: 1.4;
 $font-weight-tags: 500;
+$letter-spacing-tags: 0;
 $font-size-button: 16px;
 $line-height-button: 1.2;
 $font-weight-button: 500;
@@ -31,6 +32,14 @@ $text-primary: #f1f5ff;
 $text-secondary: #aab4d6;
 $text-muted: #7e8bb3;
 $text-inverse: #0e1424;
+
+// Tags
+$tag-padding-y: 4px;
+$tag-padding-x: 10px;
+$tag-radius: 8px;
+$tag-background: #19213a;
+$tag-border-color: #2a3558;
+$tag-text-color: $text-secondary;
 
 // Buttons
 $button-transition-duration: 160ms;

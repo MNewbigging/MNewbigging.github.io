@@ -1,0 +1,15 @@
+@import "../../palette.scss";
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: $tag-padding-y $tag-padding-x;
+  font-size: $font-size-tags;
+  font-weight: $font-weight-tags;
+  line-height: $line-height-tags;
+  letter-spacing: $letter-spacing-tags;
+  border-radius: $tag-radius;
+  background-color: $tag-background;
+  border: 1px solid $tag-border-color;
+  color: $tag-text-color;
+}

@@ -10,6 +10,7 @@ export function Gallery() {
         imageSrc="/boxCross.JPG"
         title="Box Cross"
         description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
+        tags={["Game", "Blah", "Something", "Here", "Hehe", "Aweosme"]}
         ctaButtonType="Play"
         linkPath="boxcross"
       />,
