@@ -19,10 +19,7 @@
   .image-preview {
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    border-top-left-radius: $radius-l;
-    border-top-right-radius: $radius-l;
-    border-bottom-left-radius: $radius-xs;
-    border-bottom-right-radius: $radius-xs;
+    border-radius: $radius-m;
 
     img {
       width: 100%;
@@ -48,11 +45,16 @@
 
   .buttons {
     margin-top: $space-2;
+    margin-bottom: $space-0;
     font-size: $font-size-button;
     line-height: $line-height-button;
     font-weight: $font-weight-button;
     display: flex;
-    gap: $space-1;
+    gap: $space-3;
+
+    a {
+      text-decoration: none;
+    }
 
     .cta-button {
       cursor: pointer;
@@ -61,6 +63,10 @@
       border: 1px solid transparent;
       border-radius: $radius-m;
       color: $text-inverse;
+
+      a {
+        color: $text-inverse;
+      }
 
       &:hover {
         background-color: $button-cta-background-hover;
@@ -78,6 +84,10 @@
       display: flex;
       align-items: center;
       gap: $space-2;
+
+      a {
+        color: $text-primary;
+      }
 
       &:hover {
         background-color: $button-github-background-hover;

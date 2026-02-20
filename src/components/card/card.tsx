@@ -5,6 +5,7 @@ export interface CardProps {
   title: string;
   description: string;
   ctaButtonType: "Play" | "Open";
+  appLinkPath: string;
   //githubLink: string;
 }
 
@@ -13,7 +14,11 @@ export function Card({
   title,
   description,
   ctaButtonType,
+  appLinkPath,
 }: CardProps) {
+  const appLinkBase = "https://mnewbigging.github.io/";
+  const appLink = appLinkBase + appLinkPath;
+
   return (
     <div className="card">
       <div className="image-preview">
@@ -23,7 +28,11 @@ export function Card({
       <div className="description">{description}</div>
       <div className="tags"></div>
       <div className="buttons">
-        <div className="cta-button">{ctaButtonType}</div>
+        <div className="cta-button">
+          <a href={appLink} target={"_blank"}>
+            {ctaButtonType}
+          </a>
+        </div>
         <div className="github-link-button">
           <GithubIcon />
           <span>GitHub</span>
