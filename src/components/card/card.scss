@@ -55,7 +55,7 @@
   }
 
   .buttons {
-    margin-top: $space-3;
+    margin-top: $space-4;
     margin-bottom: $space-0;
     font-size: $font-size-button;
     line-height: $line-height-button;
@@ -65,6 +65,7 @@
 
     a {
       text-decoration: none;
+      transition: $button-transition;
     }
 
     .cta-button {
@@ -78,9 +79,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      box-shadow: $button-cta-shadow;
 
       &:hover {
         background-color: $button-cta-background-hover;
+        box-shadow: $button-cta-shadow-hover;
+        transform: translateY($button-lift);
+      }
+
+      &:active {
+        box-shadow: $button-cta-shadow-active;
+        transform: translateY(0px);
       }
     }
 
@@ -93,6 +102,7 @@
       border-color: $button-github-border;
       border-radius: $radius-s;
       color: $text-primary;
+      box-shadow: $button-github-shadow;
 
       display: flex;
       align-items: center;
@@ -102,10 +112,14 @@
       &:hover {
         background-color: $button-github-background-hover;
         border-color: $button-github-border-hover;
+        box-shadow: $button-github-shadow-hover;
+        transform: translateY($button-lift);
       }
 
       &:active {
         background-color: $button-github-background-active;
+        box-shadow: $button-github-shadow-active;
+        transform: translateY(0px);
       }
     }
   }

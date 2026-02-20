@@ -4,6 +4,7 @@
 $color-bg-primary: #0e1424;
 $gallery-max-width: 1200px;
 $ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+$dur-fast: 120ms;
 $dur-med: 180ms;
 
 // Typography
@@ -44,7 +45,7 @@ $card-transition:
   transform $dur-med $ease-out,
   box-shadow $dur-med $ease-out,
   border-color $dur-med $ease-out;
-$card-lift: -4px;
+$card-lift: -2px;
 
 // Tags
 $tag-padding-y: 4px;
@@ -63,12 +64,30 @@ $button-icon-gap: 8px;
 
 $button-cta-background: #38d9c5;
 $button-cta-background-hover: #2ec4b2;
+$button-cta-shadow:
+  0 1px 0 rgba(255, 255, 255, 0.08),
+  0 8px 18px rgba(0, 0, 0, 0.35);
+$button-cta-shadow-hover:
+  0 1px 0 rgba(255, 255, 255, 0.1),
+  0 10px 22px rgba(0, 0, 0, 0.42);
+$button-cta-shadow-active:
+  0 1px 0 rgba(255, 255, 255, 0.06),
+  0 5px 14px rgba(0, 0, 0, 0.35);
+$button-lift: -1px;
+$button-transition:
+  transform $dur-fast $ease-out,
+  box-shadow $dur-fast $ease-out,
+  background-color $dur-fast $ease-out,
+  border-color $dur-fast $ease-out;
 
 $button-github-background: #1a233a;
 $button-github-background-hover: #202c49;
 $button-github-background-active: #1c2744;
 $button-github-border: #222c47;
 $button-github-border-hover: #2b375a;
+$button-github-shadow: 0 1px 10px rgba(0, 0, 0, 0.18);
+$button-github-shadow-hover: 0 2px 14px rgba(0, 0, 0, 0.24);
+$button-github-shadow-active: 0 1px 8px rgba(0, 0, 0, 0.18);
 
 // Images
 $image-overlay: rgba(0, 0, 0, 0.35);
