@@ -1,16 +1,24 @@
 import "./card.scss";
 
 export interface CardProps {
+  imageSrc: string;
   title: string;
   description: string;
   ctaButtonType: "Play" | "Open";
   //githubLink: string;
 }
 
-export function Card({ title, description, ctaButtonType }: CardProps) {
+export function Card({
+  imageSrc,
+  title,
+  description,
+  ctaButtonType,
+}: CardProps) {
   return (
     <div className="card">
-      <div className="image-preview"></div>
+      <div className="image-preview">
+        <img src={imageSrc} alt={title} />
+      </div>
       <div className="title">{title}</div>
       <div className="description">{description}</div>
       <div className="tags"></div>
