@@ -25,7 +25,7 @@ export function Card({
   const githubLink = githubLinkBase + linkPath;
 
   const tagElements = tags.map((tagText, index) => (
-    <Tag key={`${title}-${tagText}-index`} text={tagText} />
+    <Tag key={`${title}-${tagText}-${index}`} text={tagText} />
   ));
 
   return (

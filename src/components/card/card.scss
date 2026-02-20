@@ -49,14 +49,14 @@
 
   .tags {
     margin-top: $space-1;
+    margin-bottom: $space-4;
     display: flex;
     flex-wrap: wrap;
     gap: $space-1;
   }
 
   .buttons {
-    margin-top: $space-4;
-    margin-bottom: $space-0;
+    margin-top: auto;
     font-size: $font-size-button;
     line-height: $line-height-button;
     font-weight: $font-weight-button;
