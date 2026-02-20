@@ -30,19 +30,13 @@ export function Card({
       <div className="description">{description}</div>
       <div className="tags"></div>
       <div className="buttons">
-        <div className="cta-button">
-          <a href={appLink} target={"_blank"}>
-            {ctaButtonType}
-          </a>
-        </div>
-        <div className="github-link-button">
+        <a className="cta-button" href={appLink} target={"_blank"}>
+          {ctaButtonType}
+        </a>
+        <a className="github-link-button" href={githubLink} target={"_blank"}>
           <GithubIcon />
-          <span>
-            <a href={githubLink} target={"_blank"}>
-              GitHub
-            </a>
-          </span>
-        </div>
+          <span>GitHub</span>
+        </a>
       </div>
     </div>
   );
