@@ -11,7 +11,7 @@ export function Gallery() {
         title="Box Cross"
         description="Frogger clone - play as a cardboard box trying to cross as many roads as possible without getting flattened!"
         ctaButtonType="Play"
-        appLinkPath="boxcross"
+        linkPath="boxcross"
       />,
     );
   }

@@ -5,8 +5,7 @@ export interface CardProps {
   title: string;
   description: string;
   ctaButtonType: "Play" | "Open";
-  appLinkPath: string;
-  //githubLink: string;
+  linkPath: string;
 }
 
 export function Card({
@@ -14,10 +13,13 @@ export function Card({
   title,
   description,
   ctaButtonType,
-  appLinkPath,
+  linkPath,
 }: CardProps) {
   const appLinkBase = "https://mnewbigging.github.io/";
-  const appLink = appLinkBase + appLinkPath;
+  const appLink = appLinkBase + linkPath;
+
+  const githubLinkBase = "https://github.com/MNewbigging/";
+  const githubLink = githubLinkBase + linkPath;
 
   return (
     <div className="card">
@@ -35,7 +37,11 @@ export function Card({
         </div>
         <div className="github-link-button">
           <GithubIcon />
-          <span>GitHub</span>
+          <span>
+            <a href={githubLink} target={"_blank"}>
+              GitHub
+            </a>
+          </span>
         </div>
       </div>
     </div>
