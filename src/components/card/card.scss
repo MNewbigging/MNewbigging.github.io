@@ -8,6 +8,9 @@
   border-radius: $radius-l;
   border-color: $card-border;
 
+  display: flex;
+  flex-direction: column;
+
   &:hover {
     background-color: $card-background-hover;
     border-color: $card-border-hover;
@@ -20,8 +23,53 @@
   }
 
   .description {
+    margin-top: $space-2;
     font-size: $font-size-card-body;
     line-height: $line-height-card-body;
     font-weight: $font-weight-card-body;
+  }
+
+  .buttons {
+    margin-top: $space-2;
+    font-size: $font-size-button;
+    line-height: $line-height-button;
+    font-weight: $font-weight-button;
+    display: flex;
+    gap: $space-1;
+
+    .cta-button {
+      cursor: pointer;
+      padding: $button-padding-y $button-padding-x;
+      background-color: $button-cta-background;
+      border: 1px solid transparent;
+      border-radius: $radius-m;
+      color: $text-inverse;
+
+      &:hover {
+        background-color: $button-cta-background-hover;
+      }
+    }
+
+    .github-link-button {
+      cursor: pointer;
+      padding: $button-padding-y $button-padding-x;
+      background-color: $button-github-background;
+      border: 1px solid;
+      border-color: $button-github-border;
+      border-radius: $radius-m;
+
+      display: flex;
+      align-items: center;
+      gap: $space-2;
+
+      &:hover {
+        background-color: $button-github-background-hover;
+        border-color: $button-github-border-hover;
+      }
+
+      &:active {
+        background-color: $button-github-background-active;
+      }
+    }
   }
 }
